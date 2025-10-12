@@ -1,6 +1,8 @@
 # sample1
 
-- openapiを使った簡単なCLIサンプルです。
+- openapi を使った簡単な CLI サンプルです。
+
+## 使い方
 
 ```
 $ uv sync
