@@ -1,0 +1,11 @@
+[project]
+name = "sample5"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-adk",
+    "litellm",
+    "toolbox-core>=0.5.2",
+]

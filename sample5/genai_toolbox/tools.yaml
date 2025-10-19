@@ -1,0 +1,19 @@
+sources:
+  openstack-mysql-nova:
+    kind: mysql
+    host: mysql
+    port: 3306
+    database: nova
+    user: admin
+    password: adminpass
+tools:
+  search-vm-instances-by-name:
+    kind: mysql-sql
+    source: openstack-mysql-nova
+    description: |
+      Use this tool to get information for a VM instance by its name.
+    parameters:
+      - name: name
+        type: string
+        description: The name of VM instance.
+    statement: SELECT * FROM instances WHERE hostname LIKE "%" || ? || "%";

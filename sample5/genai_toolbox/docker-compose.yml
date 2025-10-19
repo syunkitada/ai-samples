@@ -1,0 +1,26 @@
+services:
+  mysql:
+    image: mysql:8.0
+    volumes:
+      - "./docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d:ro"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+    #   MYSQL_USER: hoge
+    #   MYSQL_PASSWORD: pass
+  toolbox:
+    image: us-central1-docker.pkg.dev/database-toolbox/toolbox/toolbox:0.11.0
+    restart: on-failure
+    command:
+      - --address
+      - 0.0.0.0
+      - --port
+      - "5000"
+      - --tools-file
+      - /app/tools.yaml
+      - --log-level
+      - debug
+      - --ui
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./tools.yaml:/app/tools.yaml:ro"
