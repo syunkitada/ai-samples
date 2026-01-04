@@ -1,8 +1,13 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { renderHook, act } from '@testing-library/react';
 import { useTodos } from '../../../src/hooks/useTodos';
 
 describe('useTodos', () => {
+  // Clear localStorage before each test to ensure test isolation
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
   describe('Initial state', () => {
     it('should initialize with an empty todos array', () => {
       const { result } = renderHook(() => useTodos());

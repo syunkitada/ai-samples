@@ -4,6 +4,7 @@ import './TodoInput.css';
 interface TodoInputProps {
   onAdd: (task: string) => void;
   error: string | null;
+  disabled?: boolean;
 }
 
 /**
@@ -14,11 +15,13 @@ interface TodoInputProps {
  * - Automatic input clearing on successful submission
  * - Keyboard support (Enter key to submit)
  * - Accessibility attributes (ARIA)
+ * - Can be disabled when critical errors occur
  * 
  * @param onAdd - Callback function to add a new todo
  * @param error - Validation error message from parent (null if no error)
+ * @param disabled - Whether the input should be disabled (e.g., localStorage unavailable)
  */
-export const TodoInput = ({ onAdd, error }: TodoInputProps) => {
+export const TodoInput = ({ onAdd, error, disabled = false }: TodoInputProps) => {
   const [inputValue, setInputValue] = useState('');
   const previousErrorRef = useRef<string | null>(null);
 
@@ -44,6 +47,8 @@ export const TodoInput = ({ onAdd, error }: TodoInputProps) => {
    * Clears input immediately if there was no previous error and input is valid.
    */
   const handleSubmit = () => {
+    if (disabled) return;
+    
     const previousError = previousErrorRef.current;
     onAdd(inputValue);
     
@@ -76,11 +81,13 @@ export const TodoInput = ({ onAdd, error }: TodoInputProps) => {
           aria-label="New task input"
           aria-invalid={error ? 'true' : 'false'}
           aria-describedby={error ? 'error-message' : undefined}
+          disabled={disabled}
         />
         <button
           className="add-button"
           onClick={handleSubmit}
           aria-label="Add"
+          disabled={disabled}
         >
           Add
         </button>

@@ -45,12 +45,21 @@ export class TodoPage {
   }
 
   async getErrorMessage(): Promise<string | null> {
-    const errorElement = this.page.locator('.error');
-    const isVisible = await errorElement.isVisible().catch(() => false);
-    if (!isVisible) {
-      return null;
+    // Check for system error messages (ErrorMessage component)
+    const systemErrorElement = this.page.locator('.error-message');
+    const isSystemErrorVisible = await systemErrorElement.isVisible().catch(() => false);
+    if (isSystemErrorVisible) {
+      return await systemErrorElement.textContent();
     }
-    return await errorElement.textContent();
+    
+    // Check for validation error messages (TodoInput component)
+    const validationErrorElement = this.page.locator('.error');
+    const isValidationErrorVisible = await validationErrorElement.isVisible().catch(() => false);
+    if (isValidationErrorVisible) {
+      return await validationErrorElement.textContent();
+    }
+    
+    return null;
   }
 
   async hasEmptyState(): Promise<boolean> {

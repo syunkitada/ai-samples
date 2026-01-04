@@ -1,0 +1,56 @@
+Feature: タスク永続化機能
+  As a ユーザー
+  I want to タスクが自動的に保存されることを望む
+  So that ブラウザをリロードしてもデータが失われない
+
+  Scenario: タスク追加時にlocalStorageに保存される
+    Given TODO アプリのページにいる
+    When "買い物に行く" というタスクを追加する
+    And ページをリロードする
+    Then タスクリストに "買い物に行く" が表示されること
+
+  Scenario: タスク完了時にlocalStorageに保存される
+    Given TODO アプリのページにいる
+    And "買い物に行く" というタスクを追加済みである
+    When タスク "買い物に行く" を完了としてマークする
+    And ページをリロードする
+    Then タスクリストに "買い物に行く" が表示されること
+    And タスク "買い物に行く" が完了状態としてマークされていること
+
+  Scenario: タスク削除時にlocalStorageに保存される
+    Given TODO アプリのページにいる
+    And "買い物に行く" というタスクを追加済みである
+    And "犬の散歩" というタスクを追加済みである
+    When タスク "買い物に行く" を削除する
+    And ページをリロードする
+    Then タスクリストに "犬の散歩" が表示されること
+    And タスクリストに "買い物に行く" が表示されないこと
+
+  Scenario: 複数のタスクが正しく永続化される
+    Given TODO アプリのページにいる
+    When "タスク 1" というタスクを追加する
+    And "タスク 2" というタスクを追加する
+    And タスク "タスク 1" を完了としてマークする
+    And ページをリロードする
+    Then リストに 2 件のタスクが表示されること
+    And タスク "タスク 1" が完了状態としてマークされていること
+    And タスク "タスク 2" が完了状態としてマークされていないこと
+
+  Scenario: localStorageにデータがない場合は空のリストで開始する
+    Given localStorage が空である
+    When 初めて TODO アプリのページにアクセスする
+    Then 空のタスクリストが表示されること
+    And 空の状態メッセージが表示されること
+
+  Scenario: 破損したlocalStorageデータを適切に処理する
+    Given localStorage に破損したデータが含まれている
+    When TODO アプリのページにアクセスする
+    Then エラーメッセージ "Failed to load tasks. Starting with an empty list." が表示されること
+    And 空のタスクリストが表示されること
+    And localStorage が空のリストでリセットされること
+
+  Scenario: localStorageが利用できない場合の処理
+    Given localStorage が利用できない
+    When TODO アプリのページにアクセスする
+    Then エラーメッセージ "localStorage is not available. Please enable it to use this app." が表示されること
+    And アプリが無効化された状態になること

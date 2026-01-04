@@ -457,3 +457,140 @@ spec/
 - **Session Updates**: Update `SESSION_CONTEXT.md` with implemented features and next steps
 - **Change Log**: Document what was completed in each archive for quick reference
 - **No Duplicates**: Check latest archive before creating a new one to avoid unnecessary duplication
+
+## 12. localStorage Implementation (Phase 9)
+
+### localStorage Access Timing
+
+- **Issue**: Attempting to access `localStorage` before navigating to a page results in `SecurityError: Access is denied for this document`.
+- **Solution**: Always navigate to the page (`await page.goto()`) BEFORE attempting to access localStorage in E2E tests.
+- **Implementation**: Added `localStorage.clear()` in the "I am on the TODO app page" step AFTER page navigation, not in the Before hook.
+
+### Simulating localStorage Unavailability
+
+- **Challenge**: Testing behavior when localStorage is disabled requires overriding it BEFORE the React app initializes.
+- **Solution**: Use `page.addInitScript()` to override localStorage before page navigation:
+  ```typescript
+  await page.addInitScript(() => {
+    Object.defineProperty(window, "localStorage", {
+      get: () => {
+        throw new Error("localStorage is not available");
+      },
+      configurable: true,
+    });
+  });
+  await page.goto("http://localhost:5173");
+  ```
+- **Why It Works**: Init scripts run before any page JavaScript executes, ensuring the app detects unavailability during hook initialization.
+- **Wrong Approach**: Overriding localStorage AFTER navigation with `page.evaluate()` - the app has already initialized by then.
+
+### Test Isolation with localStorage
+
+- **Pattern**: Clear localStorage at the start of each test scenario to ensure test isolation.
+- **E2E Tests**: Add `await page.evaluate(() => localStorage.clear())` in the Given step after page navigation.
+- **Unit Tests**: Add `beforeEach(() => localStorage.clear())` in test files that use localStorage.
+- **Why After Navigation**: localStorage is only accessible once the page context is established.
+- **Why beforeEach**: Ensures each test starts with clean state, preventing data leakage between tests.
+
+### localStorage Utility Pattern
+
+- **Best Practice**: Create a separate utility module for localStorage operations to centralize error handling.
+- **Implementation**: See `src/utils/localStorage.ts`
+  - `isLocalStorageAvailable()`: Safe availability check using try-catch
+  - `saveToLocalStorage(key, data)`: JSON stringify with quota error handling
+  - `loadFromLocalStorage<T>(key, defaultValue)`: JSON parse with corruption handling
+- **Benefits**:
+  - Centralized error handling
+  - Type-safe with TypeScript generics
+  - Easy to test in isolation
+  - Consistent error messages across the app
+
+### Error Handling Strategies
+
+1. **localStorage Unavailable** (Critical Error):
+
+   - Check `isLocalStorageAvailable()` on hook initialization
+   - Set error state: "localStorage is not available. Please enable it to use this app."
+   - Disable all app functionality (disable input, buttons)
+   - Show critical error message to user
+
+2. **Corrupted Data** (Warning):
+
+   - Catch JSON parse errors in `loadFromLocalStorage()`
+   - Log error to console
+   - Return default value (empty array)
+   - Optionally show warning to user: "Failed to load tasks. Starting with an empty list."
+
+3. **Quota Exceeded** (Runtime Error):
+   - Catch QuotaExceededError in `saveToLocalStorage()`
+   - Show error message to user
+   - App continues to function with unsaved changes
+
+### useEffect Dependencies for localStorage Sync
+
+- **Pattern**: Use `useEffect` to auto-save data whenever it changes:
+  ```typescript
+  useEffect(() => {
+    if (isLocalStorageAvailable()) {
+      saveToLocalStorage(STORAGE_KEY, todos);
+    }
+  }, [todos]);
+  ```
+- **Important**: Dependency array `[todos]` ensures the effect runs only when todos change
+- **Risk**: Do NOT load from localStorage inside this effect - it would create an infinite loop
+- **Correct Approach**: Load from localStorage only during state initialization with useState(() => {...})
+
+### Testing localStorage in Unit Tests
+
+- **Approach**: Use real localStorage instead of complex mocks
+- **Setup**: Clear localStorage in `beforeEach(() => localStorage.clear())`
+- **Benefits**:
+  - Tests actual behavior, not mocked behavior
+  - Simpler test code
+  - Catches real browser API quirks
+- **Async Handling**: Use `waitFor()` when testing useEffect side effects:
+  ```typescript
+  await waitFor(() => {
+    const stored = localStorage.getItem("key");
+    expect(stored).toBe(expectedValue);
+  });
+  ```
+- **Why**: useEffect runs asynchronously after render, need to wait for it to execute
+
+### Error Display UI Pattern
+
+- **Separation of Concerns**:
+  - System errors (localStorage unavailable, corrupted data): ErrorMessage component
+  - Validation errors (empty task, too long): TodoInput inline error
+- **Implementation**:
+  - TodoApp checks error type and renders appropriate ErrorMessage
+  - Critical errors disable the app (`disabled` prop on TodoInput)
+  - Validation errors are passed to TodoInput separately
+- **User Experience**:
+  - Critical errors shown prominently at top with red background
+  - Warnings shown with yellow background
+  - App clearly indicates disabled state
+
+### Data Format Best Practices
+
+- **Storage Key**: Use a descriptive constant: `STORAGE_KEY = 'react-todo-app-tasks'`
+- **Data Structure**: Store minimal necessary data:
+  ```typescript
+  [
+    { id: number, task: string, completed: boolean },
+    ...
+  ]
+  ```
+- **ID Synchronization**: When loading data, update nextId to avoid conflicts:
+  ```typescript
+  if (stored.length > 0) {
+    const maxId = Math.max(...stored.map((todo) => todo.id));
+    nextId = maxId + 1;
+  }
+  ```
+
+### Cucumber Configuration
+
+- **Issue**: Feature files were not being executed (0 scenarios).
+- **Fix**: Add `paths: ['spec/features/**/*.feature']` to `cucumber.cjs` configuration to specify where feature files are located.
+- **Result**: All feature files in `spec/features/` are now properly discovered and executed.

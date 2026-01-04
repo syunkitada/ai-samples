@@ -9,6 +9,9 @@ Given('I am on the TODO app page', async function (this: CustomWorld) {
   }
   const todoPage = new TodoPage(this.page);
   await todoPage.goto();
+  
+  // Clear localStorage to ensure test isolation (Phase 9 requirement)
+  await this.page.evaluate(() => localStorage.clear());
 });
 
 When('I enter {string} in the task input field', async function (this: CustomWorld, taskText: string) {

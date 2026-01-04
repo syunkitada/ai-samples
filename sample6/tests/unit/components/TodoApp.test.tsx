@@ -1,10 +1,15 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom';
 import { TodoApp } from '../../../src/components/TodoApp';
 
 describe('TodoApp', () => {
+  // Clear localStorage before each test to ensure test isolation
+  beforeEach(() => {
+    localStorage.clear();
+  });
+
   it('renders TodoInput component', () => {
     render(<TodoApp />);
     

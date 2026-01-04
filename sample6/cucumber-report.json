@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 151510370
+              "duration": 132885444
             }
           },
           {
@@ -27,7 +27,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 586882209
+              "duration": 583881001
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 8,
             "name": "I enter \"Buy groceries\" in the task input field",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:11"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 49843044
+              "duration": 46304957
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 9,
             "name": "I click the add button",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 168632040
+              "duration": 151813880
             }
           },
           {
@@ -62,11 +62,11 @@
             "line": 10,
             "name": "I should see \"Buy groceries\" in the task list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:33"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 32118716
+              "duration": 31910873
             }
           },
           {
@@ -74,7 +74,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 49633137
+              "duration": 50710305
             }
           }
         ],
@@ -93,7 +93,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 124909002
+              "duration": 133473013
             }
           },
           {
@@ -106,7 +106,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 561188865
+              "duration": 575558814
             }
           },
           {
@@ -115,11 +115,11 @@
             "line": 14,
             "name": "I leave the task input field empty",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:18"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:20"
             },
             "result": {
               "status": "passed",
-              "duration": 42692903
+              "duration": 38084422
             }
           },
           {
@@ -128,11 +128,11 @@
             "line": 15,
             "name": "I click the add button",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 144391099
+              "duration": 154062407
             }
           },
           {
@@ -141,11 +141,11 @@
             "line": 16,
             "name": "I should see an error message \"Task cannot be empty\"",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:38"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 9126001
+              "duration": 9818162
             }
           },
           {
@@ -154,11 +154,11 @@
             "line": 17,
             "name": "the task should not be added to the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:43"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 7268825
+              "duration": 7411256
             }
           },
           {
@@ -166,7 +166,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41979306
+              "duration": 43500119
             }
           }
         ],
@@ -185,7 +185,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 124747508
+              "duration": 130721669
             }
           },
           {
@@ -198,7 +198,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 569398779
+              "duration": 570137176
             }
           },
           {
@@ -207,11 +207,11 @@
             "line": 21,
             "name": "I enter a task with 129 characters",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:21"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 57661386
+              "duration": 38559409
             }
           },
           {
@@ -220,11 +220,11 @@
             "line": 22,
             "name": "I click the add button",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 155111270
+              "duration": 159614904
             }
           },
           {
@@ -233,11 +233,11 @@
             "line": 23,
             "name": "I should see an error message \"Task must be 128 characters or less\"",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:38"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 8862434
+              "duration": 7720779
             }
           },
           {
@@ -246,11 +246,11 @@
             "line": 24,
             "name": "the task should not be added to the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:43"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 7456679
+              "duration": 5030660
             }
           },
           {
@@ -258,7 +258,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 35962504
+              "duration": 43090446
             }
           }
         ],
@@ -277,7 +277,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 134939812
+              "duration": 132759027
             }
           },
           {
@@ -290,7 +290,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 564641795
+              "duration": 573028406
             }
           },
           {
@@ -299,11 +299,11 @@
             "line": 21,
             "name": "I enter a task with 150 characters",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:21"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 45932789
+              "duration": 45394277
             }
           },
           {
@@ -312,11 +312,11 @@
             "line": 22,
             "name": "I click the add button",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 151583849
+              "duration": 154059782
             }
           },
           {
@@ -325,11 +325,11 @@
             "line": 23,
             "name": "I should see an error message \"Task must be 128 characters or less\"",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:38"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 7213349
+              "duration": 7496237
             }
           },
           {
@@ -338,11 +338,11 @@
             "line": 24,
             "name": "the task should not be added to the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:43"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 5106370
+              "duration": 5215599
             }
           },
           {
@@ -350,7 +350,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 40627271
+              "duration": 41914706
             }
           }
         ],
@@ -369,7 +369,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 129098464
+              "duration": 116958837
             }
           },
           {
@@ -382,7 +382,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 566094909
+              "duration": 567859946
             }
           },
           {
@@ -391,11 +391,11 @@
             "line": 21,
             "name": "I enter a task with 200 characters",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:21"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:23"
             },
             "result": {
               "status": "passed",
-              "duration": 44245082
+              "duration": 41463083
             }
           },
           {
@@ -404,11 +404,11 @@
             "line": 22,
             "name": "I click the add button",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 154072520
+              "duration": 150631038
             }
           },
           {
@@ -417,11 +417,11 @@
             "line": 23,
             "name": "I should see an error message \"Task must be 128 characters or less\"",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:38"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:40"
             },
             "result": {
               "status": "passed",
-              "duration": 6601454
+              "duration": 7013214
             }
           },
           {
@@ -430,11 +430,11 @@
             "line": 24,
             "name": "the task should not be added to the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:43"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:45"
             },
             "result": {
               "status": "passed",
-              "duration": 14580831
+              "duration": 5428411
             }
           },
           {
@@ -442,7 +442,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 46943529
+              "duration": 38653788
             }
           }
         ],
@@ -461,7 +461,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 131682542
+              "duration": 123812350
             }
           },
           {
@@ -474,7 +474,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 560599072
+              "duration": 578556426
             }
           },
           {
@@ -483,11 +483,11 @@
             "line": 34,
             "name": "I enter a task with exactly 128 characters",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:25"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 46757517
+              "duration": 35699489
             }
           },
           {
@@ -496,11 +496,11 @@
             "line": 35,
             "name": "I click the add button",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 156516023
+              "duration": 149822160
             }
           },
           {
@@ -509,11 +509,11 @@
             "line": 36,
             "name": "the task should be added to the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:58"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:60"
             },
             "result": {
               "status": "passed",
-              "duration": 4361505
+              "duration": 4466664
             }
           },
           {
@@ -521,7 +521,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38357845
+              "duration": 40015520
             }
           }
         ],
@@ -540,7 +540,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 137023488
+              "duration": 123065389
             }
           },
           {
@@ -553,7 +553,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 564252970
+              "duration": 570654053
             }
           },
           {
@@ -562,11 +562,11 @@
             "line": 40,
             "name": "I add a task \"Task 1\"",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:29"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 204010720
+              "duration": 211679908
             }
           },
           {
@@ -575,11 +575,11 @@
             "line": 41,
             "name": "I add a task \"Task 2\"",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:29"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 158925703
+              "duration": 151587874
             }
           },
           {
@@ -588,11 +588,11 @@
             "line": 42,
             "name": "I add a task \"Task 3\"",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:29"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 149441074
+              "duration": 149652239
             }
           },
           {
@@ -601,11 +601,11 @@
             "line": 43,
             "name": "I should see 3 tasks in the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:65"
             },
             "result": {
               "status": "passed",
-              "duration": 5189849
+              "duration": 4204541
             }
           },
           {
@@ -614,11 +614,11 @@
             "line": 44,
             "name": "the tasks should be displayed in the order they were added",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:68"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:70"
             },
             "result": {
               "status": "passed",
-              "duration": 30411352
+              "duration": 27509030
             }
           },
           {
@@ -626,7 +626,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 47517922
+              "duration": 49582836
             }
           }
         ],
@@ -639,7 +639,7 @@
     "keyword": "Feature",
     "name": "Add Task",
     "tags": [],
-    "uri": "features/add_task.feature"
+    "uri": "spec/features/add_task.feature"
   },
   {
     "description": "  As a user\n  I want to mark tasks as complete or incomplete\n  So that I can track my progress",
@@ -656,7 +656,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 130347953
+              "duration": 111276104
             }
           },
           {
@@ -669,7 +669,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 557738249
+              "duration": 569452261
             }
           },
           {
@@ -682,7 +682,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 205790982
+              "duration": 200648404
             }
           },
           {
@@ -695,7 +695,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 275069
+              "duration": 255994
             }
           },
           {
@@ -708,7 +708,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153369892
+              "duration": 153882378
             }
           },
           {
@@ -721,7 +721,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 32241567
+              "duration": 32738346
             }
           },
           {
@@ -734,7 +734,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8564712
+              "duration": 8427535
             }
           },
           {
@@ -742,7 +742,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 33724408
+              "duration": 43096407
             }
           }
         ],
@@ -761,7 +761,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 130430277
+              "duration": 110372478
             }
           },
           {
@@ -774,7 +774,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 561596483
+              "duration": 567075032
             }
           },
           {
@@ -787,7 +787,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 193627848
+              "duration": 205883652
             }
           },
           {
@@ -800,7 +800,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 170564648
+              "duration": 176982621
             }
           },
           {
@@ -813,7 +813,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 146855763
+              "duration": 147517036
             }
           },
           {
@@ -826,7 +826,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9295912
+              "duration": 7292170
             }
           },
           {
@@ -839,7 +839,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6024134
+              "duration": 5713289
             }
           },
           {
@@ -847,7 +847,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 40923711
+              "duration": 40245162
             }
           }
         ],
@@ -866,7 +866,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 114909842
+              "duration": 136466817
             }
           },
           {
@@ -879,7 +879,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 566936897
+              "duration": 566066728
             }
           },
           {
@@ -892,7 +892,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 191294221
+              "duration": 187470658
             }
           },
           {
@@ -905,7 +905,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 142031232
+              "duration": 141192062
             }
           },
           {
@@ -918,7 +918,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 36107828
+              "duration": 34060301
             }
           },
           {
@@ -931,7 +931,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 137829539
+              "duration": 146381751
             }
           },
           {
@@ -944,7 +944,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8663577
+              "duration": 7598861
             }
           },
           {
@@ -957,7 +957,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 126340938
+              "duration": 126090772
             }
           },
           {
@@ -970,7 +970,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 8993672
+              "duration": 8566176
             }
           },
           {
@@ -978,7 +978,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 42067843
+              "duration": 47794189
             }
           }
         ],
@@ -997,7 +997,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 131592913
+              "duration": 129393630
             }
           },
           {
@@ -1010,7 +1010,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 558616388
+              "duration": 567909458
             }
           },
           {
@@ -1023,7 +1023,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 201539224
+              "duration": 194171673
             }
           },
           {
@@ -1036,7 +1036,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 172265160
+              "duration": 182749243
             }
           },
           {
@@ -1049,7 +1049,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6492718
+              "duration": 7727343
             }
           },
           {
@@ -1062,7 +1062,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6420262
+              "duration": 5436107
             }
           },
           {
@@ -1070,7 +1070,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36409007
+              "duration": 35807302
             }
           }
         ],
@@ -1083,7 +1083,7 @@
     "keyword": "Feature",
     "name": "Complete Task",
     "tags": [],
-    "uri": "features/complete_task.feature"
+    "uri": "spec/features/complete_task.feature"
   },
   {
     "description": "  As a user\n  I want to delete tasks\n  So that I can remove tasks I no longer need",
@@ -1100,7 +1100,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 104736733
+              "duration": 120487650
             }
           },
           {
@@ -1113,7 +1113,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 557568418
+              "duration": 564791038
             }
           },
           {
@@ -1126,7 +1126,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 202484810
+              "duration": 191807770
             }
           },
           {
@@ -1139,7 +1139,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 133165101
+              "duration": 140313183
             }
           },
           {
@@ -1152,7 +1152,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28703266
+              "duration": 25022996
             }
           },
           {
@@ -1160,7 +1160,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 46072022
+              "duration": 45271995
             }
           }
         ],
@@ -1179,7 +1179,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 125445856
+              "duration": 129011239
             }
           },
           {
@@ -1192,7 +1192,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 558041370
+              "duration": 570337253
             }
           },
           {
@@ -1205,7 +1205,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 341225731
+              "duration": 327409864
             }
           },
           {
@@ -1218,7 +1218,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 134874989
+              "duration": 132419393
             }
           },
           {
@@ -1231,7 +1231,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 25357890
+              "duration": 26279309
             }
           },
           {
@@ -1239,7 +1239,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 38728287
+              "duration": 37649049
             }
           }
         ],
@@ -1258,7 +1258,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 120029899
+              "duration": 127524239
             }
           },
           {
@@ -1271,7 +1271,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 558649730
+              "duration": 571641216
             }
           },
           {
@@ -1313,7 +1313,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 671611311
+              "duration": 639840680
             }
           },
           {
@@ -1326,7 +1326,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 148982276
+              "duration": 146654156
             }
           },
           {
@@ -1335,11 +1335,11 @@
             "line": 26,
             "name": "I should see 2 tasks in the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:65"
             },
             "result": {
               "status": "passed",
-              "duration": 3420438
+              "duration": 2914915
             }
           },
           {
@@ -1352,7 +1352,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31068061
+              "duration": 33571358
             }
           },
           {
@@ -1365,7 +1365,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5156345
+              "duration": 3696531
             }
           },
           {
@@ -1378,7 +1378,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3259173
+              "duration": 2560144
             }
           },
           {
@@ -1386,7 +1386,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 32333281
+              "duration": 37055570
             }
           }
         ],
@@ -1405,7 +1405,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 118069097
+              "duration": 124335127
             }
           },
           {
@@ -1418,7 +1418,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 562846583
+              "duration": 570120793
             }
           },
           {
@@ -1431,7 +1431,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 509391199
+              "duration": 492779555
             }
           },
           {
@@ -1444,7 +1444,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 482770455
+              "duration": 449579260
             }
           },
           {
@@ -1457,7 +1457,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2027047
+              "duration": 1970110
             }
           },
           {
@@ -1470,7 +1470,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5123924
+              "duration": 4760229
             }
           },
           {
@@ -1478,7 +1478,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 41663658
+              "duration": 35098012
             }
           }
         ],
@@ -1491,7 +1491,7 @@
     "keyword": "Feature",
     "name": "Delete Task",
     "tags": [],
-    "uri": "features/delete_task.feature"
+    "uri": "spec/features/delete_task.feature"
   },
   {
     "description": "  As a user\n  I want to see my task list\n  So that I can view all my tasks",
@@ -1508,7 +1508,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 119114971
+              "duration": 127351492
             }
           },
           {
@@ -1521,7 +1521,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 558204278
+              "duration": 568984127
             }
           },
           {
@@ -1534,7 +1534,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 263797
+              "duration": 270950
             }
           },
           {
@@ -1547,7 +1547,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 34259007
+              "duration": 46776386
             }
           },
           {
@@ -1555,7 +1555,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 53791838
+              "duration": 35397618
             }
           }
         ],
@@ -1574,7 +1574,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 128976372
+              "duration": 127730568
             }
           },
           {
@@ -1587,7 +1587,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 556750482
+              "duration": 571898171
             }
           },
           {
@@ -1596,11 +1596,11 @@
             "line": 13,
             "name": "I add a task \"My first task\"",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:29"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:31"
             },
             "result": {
               "status": "passed",
-              "duration": 193873430
+              "duration": 187185530
             }
           },
           {
@@ -1613,7 +1613,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3465443
+              "duration": 4081597
             }
           },
           {
@@ -1626,7 +1626,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24609627
+              "duration": 26133834
             }
           },
           {
@@ -1634,7 +1634,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 45723634
+              "duration": 38412993
             }
           }
         ],
@@ -1653,7 +1653,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 119700568
+              "duration": 126436796
             }
           },
           {
@@ -1666,7 +1666,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 557222262
+              "duration": 569332414
             }
           },
           {
@@ -1704,7 +1704,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 485271536
+              "duration": 490032096
             }
           },
           {
@@ -1713,11 +1713,11 @@
             "line": 24,
             "name": "I should see 3 tasks in the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:65"
             },
             "result": {
               "status": "passed",
-              "duration": 4133925
+              "duration": 4006245
             }
           },
           {
@@ -1755,7 +1755,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28988875
+              "duration": 22258004
             }
           },
           {
@@ -1763,7 +1763,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 37654008
+              "duration": 40602627
             }
           }
         ],
@@ -1782,7 +1782,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 117862467
+              "duration": 132278567
             }
           },
           {
@@ -1795,7 +1795,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 560850765
+              "duration": 563629444
             }
           },
           {
@@ -1837,7 +1837,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 647223684
+              "duration": 635161100
             }
           },
           {
@@ -1846,11 +1846,11 @@
             "line": 38,
             "name": "I should see 3 tasks in the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:65"
             },
             "result": {
               "status": "passed",
-              "duration": 3868774
+              "duration": 4026914
             }
           },
           {
@@ -1863,7 +1863,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2661254
+              "duration": 5075054
             }
           },
           {
@@ -1876,7 +1876,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 9579668
+              "duration": 8062144
             }
           },
           {
@@ -1889,7 +1889,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3236010
+              "duration": 4920463
             }
           },
           {
@@ -1897,7 +1897,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 35760342
+              "duration": 44316020
             }
           }
         ],
@@ -1916,7 +1916,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 119540114
+              "duration": 134294425
             }
           },
           {
@@ -1929,7 +1929,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 559630800
+              "duration": 569817050
             }
           },
           {
@@ -1942,7 +1942,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 331546865
+              "duration": 329361087
             }
           },
           {
@@ -1955,7 +1955,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 153079723
+              "duration": 147151566
             }
           },
           {
@@ -1964,11 +1964,11 @@
             "line": 47,
             "name": "I should see 3 tasks in the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:65"
             },
             "result": {
               "status": "passed",
-              "duration": 3407855
+              "duration": 3939850
             }
           },
           {
@@ -1981,7 +1981,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21387081
+              "duration": 23353252
             }
           },
           {
@@ -1989,7 +1989,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 36627910
+              "duration": 38065375
             }
           }
         ],
@@ -2008,7 +2008,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 134634885
+              "duration": 124320920
             }
           },
           {
@@ -2021,7 +2021,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 559701853
+              "duration": 565266476
             }
           },
           {
@@ -2034,7 +2034,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 506165108
+              "duration": 493291692
             }
           },
           {
@@ -2047,7 +2047,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 168480702
+              "duration": 168633675
             }
           },
           {
@@ -2056,11 +2056,11 @@
             "line": 54,
             "name": "I should see 2 tasks in the list",
             "match": {
-              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:65"
             },
             "result": {
               "status": "passed",
-              "duration": 3907026
+              "duration": 4003851
             }
           },
           {
@@ -2068,7 +2068,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 39182684
+              "duration": 35069228
             }
           }
         ],
@@ -2081,6 +2081,735 @@
     "keyword": "Feature",
     "name": "Display Tasks",
     "tags": [],
-    "uri": "features/display_tasks.feature"
+    "uri": "spec/features/display_tasks.feature"
+  },
+  {
+    "description": "  As a user\n  I want my tasks to be saved automatically\n  So that I don't lose my data when I reload the browser",
+    "elements": [
+      {
+        "description": "",
+        "id": "persist-tasks;tasks-are-saved-to-localstorage-when-added",
+        "keyword": "Scenario",
+        "line": 7,
+        "name": "Tasks are saved to localStorage when added",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119668333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 567462763
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I add a task \"Buy groceries\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 200777638
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I reload the page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35484251
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see \"Buy groceries\" in the task list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28459576
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41244009
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new",
+            "line": 6
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "persist-tasks;tasks-are-saved-to-localstorage-when-completed",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Tasks are saved to localStorage when completed",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 109994865
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 563911815
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I have added a task \"Buy groceries\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 185369029
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I mark the task \"Buy groceries\" as completed",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137447950
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I reload the page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36843038
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see \"Buy groceries\" in the task list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27957908
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the task \"Buy groceries\" should be marked as completed",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20497458
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37653559
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "persist-tasks;tasks-are-saved-to-localstorage-when-deleted",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Tasks are saved to localStorage when deleted",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119473135
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562017008
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I have added a task \"Buy groceries\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 187846799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I have added a task \"Walk the dog\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 157362809
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I delete the task \"Buy groceries\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 147120066
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I reload the page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36058627
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see \"Walk the dog\" in the task list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27823503
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I should not see \"Buy groceries\" in the task list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19893458
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 42935423
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new",
+            "line": 22
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "persist-tasks;multiple-tasks-are-persisted-correctly",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Multiple tasks are persisted correctly",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119203115
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 565897356
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I add a task \"Task 1\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198271315
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I add a task \"Task 2\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155104243
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I mark the task \"Task 1\" as completed",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149695571
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I reload the page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38338020
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I should see 2 tasks in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18602640
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "the task \"Task 1\" should be marked as completed",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4011655
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "the task \"Task 2\" should not be marked as completed",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2762706
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41295226
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new",
+            "line": 32
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "persist-tasks;app-starts-with-empty-list-when-no-data-in-localstorage",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "App starts with empty list when no data in localStorage",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 118181525
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "localStorage is empty",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562693045
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "I visit the TODO app page for the first time",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:50"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 536902108
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "I should see an empty task list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27464275
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "I should see the empty state message",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6380238
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38921493
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new",
+            "line": 43
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "persist-tasks;app-handles-corrupted-localstorage-data-gracefully",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "App handles corrupted localStorage data gracefully",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 112863822
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 52,
+            "name": "localStorage contains corrupted data",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562888765
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "I visit the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 535203981
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "I should see an error message \"Failed to load tasks. Starting with an empty list.\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31967591
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "I should see an empty task list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4045319
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "localStorage should be reset with an empty list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:74"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4402563
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35368262
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new",
+            "line": 50
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "persist-tasks;app-handles-localstorage-not-available",
+        "keyword": "Scenario",
+        "line": 59,
+        "name": "App handles localStorage not available",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 118261015
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 60,
+            "name": "localStorage is not available",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 560122190
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 61,
+            "name": "I visit the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:70"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 532012795
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "I should see an error message \"localStorage is not available. Please enable it to use this app.\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33505715
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 63,
+            "name": "the app should be in a disabled state",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/persist_tasks.steps.ts:95"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4909091
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35745504
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@new",
+            "line": 58
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "persist-tasks",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Persist Tasks",
+    "tags": [],
+    "uri": "spec/features/persist_tasks.feature"
   }
 ]

@@ -24,6 +24,11 @@
 - タスクの削除機能（削除ボタン）
 - タスクの完了/未完了切り替え機能（チェックボックスまたはボタン）
 - タスクリストの表示
+- **LocalStorage によるデータ永続化**
+  - タスクの追加・削除・完了切り替え時に自動保存
+  - アプリ起動時に localStorage からタスクを読み込み
+  - localStorage が利用できない環境でのエラーハンドリング
+  - データ破損時のエラーハンドリングとリセット処理
 - React 基礎機能の活用：
   - コンポーネント分割
   - useState による状態管理
@@ -33,15 +38,16 @@
 - Vitest + React Testing Library による簡素な Unit テスト：
   - コンポーネントのレンダリングテスト
   - ユーザーインタラクションのテスト（簡易的なもの）
+  - **localStorage 機能のテスト**
 - Playwright による基本的な E2E テスト：
   - タスク追加のテスト
   - タスク完了のテスト
   - タスク削除のテスト
+  - **データ永続化のテスト**
 
 ### Should Have (v2)
 
 - タスクの編集機能
-- LocalStorage によるデータ永続化
 - タスクのフィルタリング（全て/完了/未完了）
 - タスクの優先度設定
 - より詳細なテストケース
@@ -64,7 +70,10 @@
   - Unit テスト: Vitest + React Testing Library
   - E2E テスト: Playwright
 - **ブラウザ対応**: モダンブラウザ（Chrome, Firefox, Safari 最新版）
-- **データ保存**: メモリのみ（ブラウザリロードでデータ消失 OK）
+- **データ保存**: localStorage による永続化
+  - ブラウザリロード後もデータが保持される
+  - localStorage キー名: `react-todo-app-tasks`
+  - データ形式: JSON 配列 `[{id: number, text: string, completed: boolean}, ...]`
 - **UI/UX**: シンプルな HTML + CSS（素の CSS）
 - **開発期間**: 1 日以内で完成
 - **パフォーマンス**: 特別な要件なし（学習用途のため）
