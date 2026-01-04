@@ -409,3 +409,51 @@ test("Keyboard navigation", async ({ page }) => {
 - [x] No console errors or warnings
 - [x] Performance optimized (Vite + React)
 - [x] Code well-organized and maintainable
+
+## 11. Archive Management
+
+### Archive Process
+
+When a project phase is completed, archive the current state to preserve history and clean up the working environment:
+
+1. **Create Archive Directory**: `spec/archives/YYYYMMDD_N/` based on date and sequence number
+2. **Snapshot Before Cleanup**: Copy current state files to archive
+   - `REQUIREMENTS.md` - Product requirements
+   - `TODO.md` - All tasks (including completed ones)
+   - `SESSION_CONTEXT.md` - Session state and context
+   - `features/` - All feature specifications
+3. **Update Current Files**:
+   - Add "Implemented Features" section to `SESSION_CONTEXT.md`
+   - Remove completed tasks from `TODO.md`, keep only future enhancements
+   - Add archive entry to `CHANGE_LOG.md`
+4. **Maintain Traceability**: Archive contains full history, current files show only active work
+
+### Archive Structure
+
+```
+spec/
+├── archives/
+│   └── 20260104_1/          # First archive (Jan 4, 2026)
+│       ├── REQUIREMENTS.md
+│       ├── TODO.md          # Snapshot with all completed tasks
+│       ├── SESSION_CONTEXT.md
+│       └── features/
+│           ├── add_task.feature
+│           ├── complete_task.feature
+│           ├── delete_task.feature
+│           └── display_tasks.feature
+├── REQUIREMENTS.md          # Current requirements
+├── TODO.md                  # Current tasks (uncompleted only)
+├── SESSION_CONTEXT.md       # Current session state
+├── KNOWLEDGE_BASE.md        # Accumulated knowledge
+├── CHANGE_LOG.md            # Archive history
+└── features/                # Current specifications (never deleted)
+```
+
+### Best Practices
+
+- **Feature Files Stay Current**: Never delete or archive feature files from `spec/features/` - they represent the latest specifications
+- **TODO Cleanup**: Always remove completed tasks from root `TODO.md` - refer to archive for history
+- **Session Updates**: Update `SESSION_CONTEXT.md` with implemented features and next steps
+- **Change Log**: Document what was completed in each archive for quick reference
+- **No Duplicates**: Check latest archive before creating a new one to avoid unnecessary duplication
