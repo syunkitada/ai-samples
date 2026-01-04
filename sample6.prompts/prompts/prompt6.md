@@ -8,17 +8,35 @@
 
 # Instructions
 
-1. **Determine Archive Path**:
-   - 本日の日付を確認し、`spec/archives/` 内の既存フォルダを確認して、次の連番（例: 20260104_1, 20260104_2...）を決定してください。
-2. **Move Files**:
-   - `spec/TODO.md` で完了済みのタスクに対応する `.feature` および `.feature.ja` ファイルをアーカイブに移動してください。
-   - 現在の `spec/SESSION_CONTEXT.md`, `spec/REQUIREMENTS.md` のコピーをアーカイブ内に保存してください。
-3. **Reset Session Context**:
-   - プロジェクトルートの `spec/SESSION_CONTEXT.md` を更新し、アーカイブした場所のパスを「History」セクションに追記した上で、現在のステータスを最小限に整理してください。
-4. **Knowledge Sync**:
-   - アーカイブするドキュメントから得られた「今後も守るべきルール」がある場合は、必ず `spec/KNOWLEDGE_BASE.md` に集約してからアーカイブしてください。
+1. **Duplicate Check**:
+
+   - `spec/archives/` 内の最新アーカイブと、現在の `spec/REQUIREMENTS.md`, `spec/features/`, `spec/SESSION_CONTEXT.md` の内容を比較してください。
+   - 差分がない場合は、すでにアーカイブ済みのため「No changes to archive.」と報告して終了してください。
+
+2. **Determine Archive Path**:
+
+   - 本日の日付を確認し、`spec/archives/` 内の既存フォルダから次の連番（例: 20260104_1）を決定してください。
+
+3. **Snapshot Files (Copy before cleanup)**:
+
+   - 以下のファイルを、**クリーンアップ前の状態で**アーカイブディレクトリ内へコピーして保存してください。
+     - `spec/REQUIREMENTS.md`
+     - `spec/features/` (最新の全仕様)
+     - `spec/TODO.md` (完了済みタスクが含まれている状態)
+     - `spec/SESSION_CONTEXT.md`
+
+4. **Update Current Status & Cleanup**:
+
+   - **Session Context**: ルートの `spec/SESSION_CONTEXT.md` を更新してください。
+     - **「実装済み（Implemented）」セクションに、完了した feature ファイル名やシナリオ名を明記してください。**
+     - 「現在のタスク」を次に着手すべき内容に更新してください。
+   - **TODO Cleanup**: **ルートの `spec/TODO.md` から、完了済みのタスクを削除してください。** 常に未完了のタスクのみが並ぶ状態を維持します。
+
+5. **Update Knowledge & Logs**:
+   - **Knowledge Sync**: 作業中に得られた「守るべきルール」を `spec/KNOWLEDGE_BASE.md` に集約・追記してください。
+   - **Change Log**: `spec/CHANGE_LOG.md` にアーカイブ名をセクション名として、今回の変更内容（完了・削除したタスク等）を数行で追記してください。
 
 # Constraints
 
-- **Do not delete spec/KNOWLEDGE_BASE.md**: このファイルはアーカイブせず、常にルートに置いてください。
-- **Maintain Consistency**: 英語版と日本語版の仕様ファイルは必ずセットでアーカイブしてください。
+- **Do not delete features**: `spec/features/*.feature` は最新の仕様を示すため、削除せずルートに維持してください。
+- **Traceability**: 完了したタスクの詳細はアーカイブ内の `TODO.md` で確認できるため、ルートからは迷わず削除してください。
