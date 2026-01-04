@@ -1,0 +1,2086 @@
+[
+  {
+    "description": "  As a user\n  I want to add a new task\n  So that I can track things I need to do",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-task;successfully-add-a-valid-task",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Successfully add a valid task",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 151510370
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 586882209
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter \"Buy groceries\" in the task input field",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49843044
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click the add button",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168632040
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see \"Buy groceries\" in the task list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32118716
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49633137
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "add-task;cannot-add-an-empty-task",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Cannot add an empty task",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 124909002
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 561188865
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I leave the task input field empty",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42692903
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I click the add button",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 144391099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see an error message \"Task cannot be empty\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9126001
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the task should not be added to the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7268825
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41979306
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "add-task;cannot-add-a-task-exceeding-character-limit",
+        "keyword": "Scenario Outline",
+        "line": 28,
+        "name": "Cannot add a task exceeding character limit",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 124747508
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 569398779
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I enter a task with 129 characters",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57661386
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I click the add button",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 155111270
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see an error message \"Task must be 128 characters or less\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8862434
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the task should not be added to the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7456679
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35962504
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "add-task;cannot-add-a-task-exceeding-character-limit",
+        "keyword": "Scenario Outline",
+        "line": 29,
+        "name": "Cannot add a task exceeding character limit",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 134939812
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 564641795
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I enter a task with 150 characters",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45932789
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I click the add button",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 151583849
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see an error message \"Task must be 128 characters or less\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7213349
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the task should not be added to the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5106370
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40627271
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "add-task;cannot-add-a-task-exceeding-character-limit",
+        "keyword": "Scenario Outline",
+        "line": 30,
+        "name": "Cannot add a task exceeding character limit",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 129098464
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 566094909
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I enter a task with 200 characters",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44245082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I click the add button",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154072520
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "I should see an error message \"Task must be 128 characters or less\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6601454
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "the task should not be added to the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14580831
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46943529
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "add-task;successfully-add-a-task-at-maximum-length",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Successfully add a task at maximum length",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 131682542
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 560599072
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I enter a task with exactly 128 characters",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46757517
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I click the add button",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 156516023
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the task should be added to the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4361505
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38357845
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "add-task;add-multiple-tasks",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Add multiple tasks",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 137023488
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 564252970
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I add a task \"Task 1\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 204010720
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "I add a task \"Task 2\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 158925703
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "I add a task \"Task 3\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 149441074
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "I should see 3 tasks in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5189849
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "the tasks should be displayed in the order they were added",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30411352
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47517922
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-task",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add Task",
+    "tags": [],
+    "uri": "features/add_task.feature"
+  },
+  {
+    "description": "  As a user\n  I want to mark tasks as complete or incomplete\n  So that I can track my progress",
+    "elements": [
+      {
+        "description": "",
+        "id": "complete-task;mark-an-incomplete-task-as-complete",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Mark an incomplete task as complete",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 130347953
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 557738249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I have a task \"Write documentation\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 205790982
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "the task is incomplete",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 275069
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "I click the checkbox for \"Write documentation\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153369892
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the task should be marked as complete",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32241567
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "the task text should be grayed out",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8564712
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33724408
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "complete-task;mark-a-complete-task-as-incomplete",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Mark a complete task as incomplete",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 130430277
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 561596483
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I have a task \"Review code\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193627848
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the task is marked as complete",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 170564648
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I click the checkbox for \"Review code\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 146855763
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "the task should be marked as incomplete",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9295912
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "the task text should not be grayed out",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6024134
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 40923711
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "complete-task;toggle-task-completion-multiple-times",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Toggle task completion multiple times",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 114909842
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 566936897
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I have a task \"Test feature\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 191294221
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I click the checkbox for \"Test feature\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142031232
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the task should be marked as complete",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36107828
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I click the checkbox for \"Test feature\" again",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 137829539
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the task should be marked as incomplete",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8663577
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I click the checkbox for \"Test feature\" again",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126340938
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the task should be marked as complete",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8993672
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 42067843
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "complete-task;visual-appearance-of-completed-task",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Visual appearance of completed task",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 131592913
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 33,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 558616388
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I have an incomplete task \"Deploy application\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 201539224
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "I mark the task as complete",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 172265160
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the task text should have a grayed out appearance",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:65"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6492718
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "the checkbox should be checked",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6420262
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36409007
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "complete-task",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Complete Task",
+    "tags": [],
+    "uri": "features/complete_task.feature"
+  },
+  {
+    "description": "  As a user\n  I want to delete tasks\n  So that I can remove tasks I no longer need",
+    "elements": [
+      {
+        "description": "",
+        "id": "delete-task;delete-an-incomplete-task",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Delete an incomplete task",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 104736733
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 557568418
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I have a task \"Old task\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/complete_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 202484810
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I click the delete button for \"Old task\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 133165101
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "the task \"Old task\" should be removed from the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28703266
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 46072022
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "delete-task;delete-a-completed-task",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Delete a completed task",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 125445856
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 558041370
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "I have a completed task \"Finished work\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 341225731
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click the delete button for \"Finished work\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 134874989
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "the task \"Finished work\" should be removed from the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25357890
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38728287
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "delete-task;delete-a-task-from-multiple-tasks",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Delete a task from multiple tasks",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 120029899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 558649730
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Task name",
+                      "Status"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First task",
+                      "incomplete"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task",
+                      "incomplete"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task",
+                      "complete"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I have the following tasks:",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 671611311
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I delete \"Second task\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148982276
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "I should see 2 tasks in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3420438
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "\"Second task\" should not be in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31068061
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "\"First task\" should still be in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5156345
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "\"Third task\" should still be in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3259173
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 32333281
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "delete-task;delete-all-tasks-one-by-one",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Delete all tasks one by one",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 118069097
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562846583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I have 3 tasks",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 509391199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "I delete all tasks one by one",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 482770455
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "the task list should be empty",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2027047
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I should see \"No tasks available\" message",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5123924
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41663658
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "delete-task",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Delete Task",
+    "tags": [],
+    "uri": "features/delete_task.feature"
+  },
+  {
+    "description": "  As a user\n  I want to see my task list\n  So that I can view all my tasks",
+    "elements": [
+      {
+        "description": "",
+        "id": "display-tasks;display-empty-task-list",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Display empty task list",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119114971
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 558204278
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I have no tasks",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 263797
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I should see \"No tasks available\" message",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34259007
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 53791838
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "display-tasks;display-single-task",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Display single task",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 128976372
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 556750482
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I add a task \"My first task\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 193873430
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see 1 task in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3465443
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "the task \"My first task\" should be displayed",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24609627
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 45723634
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "display-tasks;display-multiple-tasks-in-order",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Display multiple tasks in order",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119700568
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 557222262
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Task name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I add the following tasks in order:",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 485271536
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see 3 tasks in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4133925
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Task name"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Second task"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Third task"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 25,
+            "name": "the tasks should be displayed in this order:",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28988875
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37654008
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "display-tasks;display-tasks-with-different-completion-states",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Display tasks with different completion states",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 117862467
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 560850765
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Task name",
+                      "Status"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Incomplete one",
+                      "incomplete"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Completed one",
+                      "complete"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Another pending",
+                      "incomplete"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I have the following tasks:",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 647223684
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "I should see 3 tasks in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3868774
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "\"Completed one\" should appear grayed out",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2661254
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "\"Incomplete one\" should not appear grayed out",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9579668
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "\"Another pending\" should not appear grayed out",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3236010
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35760342
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "display-tasks;task-list-updates-after-adding-a-task",
+        "keyword": "Scenario",
+        "line": 43,
+        "name": "Task list updates after adding a task",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 119540114
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 44,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 559630800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "I have 2 tasks",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 331546865
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "I add a new task \"New task\"",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 153079723
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "I should see 3 tasks in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3407855
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "\"New task\" should be the last task in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21387081
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 36627910
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "display-tasks;task-list-updates-after-deleting-a-task",
+        "keyword": "Scenario",
+        "line": 50,
+        "name": "Task list updates after deleting a task",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 134634885
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 51,
+            "name": "I am on the TODO app page",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 559701853
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "I have 3 tasks",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/delete_task.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 506165108
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 53,
+            "name": "I delete the second task",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/display_tasks.steps.ts:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 168480702
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "I should see 2 tasks in the list",
+            "match": {
+              "location": "file:/home/owner/tmp/ai-samples/sample6/tests/e2e/steps/add_task.steps.ts:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3907026
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39182684
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "display-tasks",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Display Tasks",
+    "tags": [],
+    "uri": "features/display_tasks.feature"
+  }
+]

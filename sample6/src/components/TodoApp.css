@@ -1,0 +1,16 @@
+.todo-app {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-app h1 {
+  margin: 0 0 1.5rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}

@@ -1,0 +1,44 @@
+Feature: タスク追加機能
+  As a ユーザー
+  I want to 新しいタスクを追加したい
+  So that やるべきことを記録できる
+
+  Scenario: 有効なタスクを正常に追加できる
+    Given TODO アプリのページにいる
+    When タスク入力欄に "買い物に行く" と入力する
+    And 追加ボタンをクリックする
+    Then タスクリストに "買い物に行く" が表示されること
+
+  Scenario: 空のタスクは追加できない
+    Given TODO アプリのページにいる
+    When タスク入力欄を空のままにする
+    And 追加ボタンをクリックする
+    Then エラーメッセージ "Task cannot be empty" が表示されること
+    And タスクはリストに追加されないこと
+
+  Scenario Outline: 文字数制限を超えるタスクは追加できない
+    Given TODO アプリのページにいる
+    When <文字数> 文字のタスクを入力する
+    And 追加ボタンをクリックする
+    Then エラーメッセージ "Task must be 128 characters or less" が表示されること
+    And タスクはリストに追加されないこと
+
+    Examples:
+      | 文字数 |
+      | 129    |
+      | 150    |
+      | 200    |
+
+  Scenario: 最大文字数のタスクを正常に追加できる
+    Given TODO アプリのページにいる
+    When ちょうど 128 文字のタスクを入力する
+    And 追加ボタンをクリックする
+    Then タスクがリストに追加されること
+
+  Scenario: 複数のタスクを追加できる
+    Given TODO アプリのページにいる
+    When "タスク 1" を追加する
+    And "タスク 2" を追加する
+    And "タスク 3" を追加する
+    Then リストに 3 件のタスクが表示されること
+    And タスクは追加された順番に表示されること
